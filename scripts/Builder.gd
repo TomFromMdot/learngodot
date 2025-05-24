@@ -206,8 +206,18 @@ class StadiumData:
 	var HEIGHT: int
 	var TILESET: int
 	var DATA: Array
-
+	# TODO 
+	# ADD TO DATA 3 NEW NODES WHICH WILL BE A LAYERS
+	# CREATE LAYERS
+	# GROUND
+	# LINE_GROUND
+	# LINE_BLOCK
+	
+	# THEN WE CAN MAKE 4 OTHER TYPES OF OBJECTS
+	# WHICH CAN REPRESENT FEW PARTS OF STADIUM
+	# MOST IMPORTANT THINK IS 
+	# LINE_BLOCK => SPRITE WITH COLISION
 func _ready() -> void:
 	gridData = loadStadiumFromXml("res://stadiums/stadium_extra_modified.xml")
-	var stadium = createOneBigTexture(gridData, 8)
+	var stadium = createOneBigTexture(gridData, 32)
 	add_child(stadium)
