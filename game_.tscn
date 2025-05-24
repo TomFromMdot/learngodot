@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://uhrmd47wfoi0"]
+
+[ext_resource type="Script" uid="uid://bq7vhln1li0h6" path="res://scripts/Builder.gd" id="1_eaop7"]
+
+[node name="Game_" type="Node2D"]
+position = Vector2(40, 34)
+script = ExtResource("1_eaop7")
