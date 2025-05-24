@@ -219,5 +219,5 @@ class StadiumData:
 	# LINE_BLOCK => SPRITE WITH COLISION
 func _ready() -> void:
 	gridData = loadStadiumFromXml("res://stadiums/stadium_extra_modified.xml")
-	var stadium = createOneBigTexture(gridData, 32)
+	var stadium = createOneBigTexture(gridData, 8)
 	add_child(stadium)

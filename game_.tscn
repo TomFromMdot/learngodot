@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://uhrmd47wfoi0"]
+[gd_scene load_steps=3 format=3 uid="uid://uhrmd47wfoi0"]
 
 [ext_resource type="Script" uid="uid://bq7vhln1li0h6" path="res://scripts/Builder.gd" id="1_eaop7"]
+[ext_resource type="Script" uid="uid://c2p3vs7c8dj0i" path="res://scripts/Player.gd" id="2_wkhfp"]
 
 [node name="Game_" type="Node2D"]
 position = Vector2(40, 34)
+
+[node name="Builder" type="Node2D" parent="."]
 script = ExtResource("1_eaop7")
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("2_wkhfp")
